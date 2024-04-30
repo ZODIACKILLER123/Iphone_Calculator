@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* estilos generales para la calculadora*/
+.calculator{
+    background-color: black;
+    width: 500px;
+    height: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+
+/* posiciones y demas acerca del pat numerico*/
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4, 110px);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 15px;
+
+}
+
+/*Parte de posicionamiento y diseño de los botones*/
+.deletall{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.plusorminos{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.porce{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.div{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.multi{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.minos{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.plus{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.iquals{
+    grid-column: 4;
+    grid-row: 5;
+}
+
+.nine{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.eight{
+    grid-column: 2;
+    grid-row: 2;
+}
+.seven{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.six{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.five{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.four{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.three{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.two{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.one{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.zero{
+    grid-column: 1;
+    grid-row: 5;
+    width: 230px;
+}
+
+.comma{
+    grid-column: 3;
+    grid-row: 5;
+}
+/*Diseño de botones*/
+
+.deletall, .plusorminos, .porce{
+    background-color: rgb(146, 145, 145);
+    border: none;
+    color: black;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+.div, .minos, .plus, .iquals, .multi{
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 60px;
+    border-radius: 50px;
+}
+
+.zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .comma{
+    background-color: rgb(26, 25, 25);
+    border: none;
+    color: white;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+/*hover de los botones*/
+
+.deletall:hover, .plusorminos:hover, .porce:hover{
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+.div:hover, .minos:hover, .plus:hover, .iquals:hover, .multi:hover{
+    background-color: orangered;
+}
+
+.zero:hover, .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .comma:hover{
+    background-color: rgb(146, 145, 145);
+    color: black;
+}
+
+/* parte del input*/
+
+input{
+    text-align: right;
+    caret-color: white;
+    color: white;
+    font-size: 100px;
+    border: 0;
+    background-color: black;
+    width: 99%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
