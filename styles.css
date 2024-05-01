@@ -165,16 +165,17 @@
 
 /* parte del input*/
 
-input{
+.input1{
     text-align: right;
     caret-color: white;
     color: white;
     font-size: 100px;
     border: 0;
     background-color: black;
-    width: 99%;
+    width: 96%;
     height: 100px;
     margin-top: 50px;
+    margin-left: 10px;
     margin-bottom: 50px;
 }
 

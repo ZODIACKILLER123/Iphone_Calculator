@@ -10,33 +10,34 @@
     <div class="calculator">
         <section>
             <header>
-                <input type="text">                
+                <input type="text" name="ans" value="" autocomplete="off" readonly class="input1">                
             </header>
         </section>
 
         <section >
-            <div class="botones">
-                <button class="plusorminos">+/-</button>
-                <button class="porce">%</button>
-                <button class="comma">,</button>
-                <button class="multi">*</button>
-                <button class="div">÷</button>
-                <button class="minos">-</button>
-                <button class="plus">+</button>
-                <button class="iquals">=</button>
-                <button class="deletall">AC</button>
-                <button class="nine">9</button>
-                <button class="eight">8</button>
-                <button class="seven">7</button>
-                <button class="six">6</button>
-                <button class="five">5</button>
-                <button class="four">4</button>
-                <button class="three">3</button>
-                <button class="two">2</button>
-                <button class="one">1</button>
-                <button class="zero">0</button>
+            <div class="botones" name="calculadora">
+                <input type= "button" value="-/+" class="plusorminos" onclick="numInput('*(-1)')"></input>
+                <input type= "button" value="%" class="porce" onclick="numInput('%')"></input>
+                <input type= "button" value="," class="comma" onclick="numInput(',')"></input>
+                <input type= "button" value="*" class="multi" onclick="numInput('*')"></input>
+                <input type= "button" value="÷" class="div" onclick="numInput('/')"></input>
+                <input type= "button" value="-" class="minos" onclick="numInput('-')"></input>
+                <input type= "button" value="+" class="plus" onclick="numInput('+')"></input>
+                <input type= "button" value="=" class="iquals" onclick="calcular()"></input>
+                <input type= "button" value="AC" class="deletall" onclick="reset()"></input>
+                <input type= "button" value="9" class="nine" onclick="numInput('9')"></input>
+                <input type= "button" value="8" class="eight" onclick="numInput('8')"></input>
+                <input type= "button" value="7" class="seven" onclick="numInput('7')"></input>
+                <input type= "button" value="6" class="six" onclick="numInput('6')"></input>
+                <input type= "button" value="5" class="five" onclick="numInput('5')"></input>
+                <input type= "button" value="4" class="four" onclick="numInput('4')"></input>
+                <input type= "button" value="3" class="three" onclick="numInput('3')"></input>
+                <input type= "button" value="2" class="two" onclick="numInput('2')"></input>
+                <input type= "button" value="1" class="one" onclick="numInput('1')"></input>
+                <input type= "button" value="0" class="zero" onclick="numInput('0')"></input>
             </div>
         </section>
     </div>
+    <script src="/project1/scripts.js"></script>
 </body>
 </html>
